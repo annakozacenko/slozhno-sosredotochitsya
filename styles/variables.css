@@ -15,6 +15,7 @@
   --button-border-color: rgba(255, 0, 112, 0.4);
   --title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --page-padding: 10px;
+  --font-size: 18px;
 }
 
 @media (width >=768px) {

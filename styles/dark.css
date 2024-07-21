@@ -26,6 +26,6 @@
   background-image: url(./../images/cover-image-dark.png);
 }
 
-.page.theme_dark .header__decor-element {
+.page.theme_dark .rec {
   display: block;
 }
