@@ -10,7 +10,7 @@
 
   font-family: IBM Plex mono, monospace;
 
-  background-color: var(--bg-color);
+  background-color: var(--background-color);
   background-image: url(./../images/cover-image-dark.png);
   background-position: top center;
   background-size: cover;
@@ -80,19 +80,18 @@
 
   border: none;
   padding-inline: 13px;
-  color: var(--accent-color);
+  color: var( --decor-color);
   text-transform: lowercase;
   background-color: transparent;
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var( --decor-color);
 }
 
 .header__theme-menu-button:hover {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--inactive-color);
 }
 
 .header__theme-menu-button:disabled {
@@ -106,12 +105,12 @@
   color: var(--title-color);
   font-size: var(--title-size);
   line-height: 82.5%;
-  text-shadow: 4px 4px #ff0070;
+  text-shadow: 4px 4px var(--title-shadow-color);
 }
 
 .title-decor {
-  color: var(--decor-color);
-  background-color: var(--title-decor-color);
+  color: var(--accent-text-color);
+  background-color: var(--accent-color);
   font-family: IBM Plex Mono;
   font-size: 18px;
 
@@ -143,6 +142,7 @@
 
 .header__theme-text {
   display: block;
+  font-weight: 700;
 }
 
 /* Надо почистить все лишние стили */
@@ -151,7 +151,7 @@
 .header::after {
   content: "";
   position: absolute;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-color);
   width: 25px;
   height: 25px;
 }
@@ -189,7 +189,7 @@
   font-weight: 700;
   line-height: 23.4px;
   text-align: left;
-  color: var(--accent-color);
+  color: var(--section-title-color);
   font-size: inherit;
   font-family: IBM Plex Mono;
   font-size: 18px;
@@ -257,7 +257,7 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 var(--title-shadow-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .link:hover {
@@ -316,7 +316,7 @@
   color: var(--title-color);
   font-size: var(--title-size);
   line-height: 82.5%;
-  text-shadow: 2px 2px #ff0070;
+  text-shadow: 2px 2px var(--title-shadow-color);
   margin-block-start: 40px;
 }
 
@@ -329,7 +329,7 @@
 .footer::after {
   content: "";
   position: absolute;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--decor-color);
   width: 25px;
   height: 25px;
 }

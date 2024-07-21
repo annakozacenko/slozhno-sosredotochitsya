@@ -1,22 +1,27 @@
-
 :root .theme-dark {
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --decor-color: #000028;
-  --title-color: #DB00FF;
-  --title-decor-color: #FF0070;
-  --button-border-color: rgba(255, 0, 112, 0.4);
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --section-title-color: #ff0070;
+  --decor-color: #FF0070;
+  --accent-color: #ff0070;
+  --accent-text-color: #000028;
+  --inactive-color: #FF007066;
+ 
 }
 
 .page.theme_dark {
-  --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --accent-color: #FF0070;
-  --decor-color: #000028;
-  --title-color: #DB00FF;
-  --title-decor-color: #FF0070;
-  --button-border-color: rgba(255, 0, 112, 0.4);
+
+  --background-color: #000028;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --title-shadow-color: #ff0070;
+  --section-title-color: #ff0070;
+  --decor-color: #FF0070;
+  --accent-color: #ff0070;
+  --accent-text-color: #000028;
+  --inactive-color: #FF007066;
 
   background-image: url(./../images/cover-image-dark.png);
 }
