@@ -1,29 +1,28 @@
 :root .theme_light {
-  --background-color: #FFF1F7;
+  --background-color: #fff1f7;
   --text-color: #353430;
-  --title-color: #FFC2E6;
+  --title-color: #ffc2e6;
   --title-shadow-color: #ff0070;
   --section-title-color: #353430;
-  --decor-color:#353430;
-  --accent-color:  #FF8DCB ;
-  --accent-text-color:  #353430;
+  --decor-color: #353430;
+  --accent-color: #ff8dcb;
+  --accent-text-color: #353430;
   --inactive-color: #32312d66;
 }
-   
+
 @media (prefers-color-scheme: light) {
   :root {
-    --background-color: #FFF1F7;
+    --background-color: #fff1f7;
     --text-color: #353430;
-    --title-color: #FFC2E6;
+    --title-color: #ffc2e6;
     --title-shadow-color: #ff0070;
     --section-title-color: #353430;
-    --decor-color:#353430;
-    --accent-color:  #FF8DCB ;
-    --accent-text-color:  #353430;
+    --decor-color: #353430;
+    --accent-color: #ff8dcb;
+    --accent-text-color: #353430;
     --inactive-color: #32312d66;
   }
 
- 
   .page {
     background-image: url(./../images/cover-image-light.png);
   }
@@ -31,10 +30,7 @@
   .rec {
     display: none;
   }
-  
 }
-
-
 
 .page.theme_light {
   background-image: url(./../images/cover-image-light.png);
