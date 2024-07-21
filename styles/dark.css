@@ -12,7 +12,6 @@
 }
 
 .page.theme_dark {
-
   --background-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
@@ -21,8 +20,7 @@
   --decor-color: #FF0070;
   --accent-color: #ff0070;
   --accent-text-color: #000028;
-  --inactive-color: #FF007066;
-
+  --inactive-color: #FF007066; 
   background-image: url(./../images/cover-image-dark.png);
 }
 
