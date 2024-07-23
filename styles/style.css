@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin: 0;
+  margin: 0 auto;
   font-family: IBM Plex mono, monospace;
   font-size: var(--font-size);
   background-color: var(--background-color);
@@ -18,7 +18,8 @@
   grid-template-rows: 1fr auto 1fr;
   align-items: center;
   justify-items: stretch;
-  min-height: 668px;
+  min-block-size: 668px;
+  height: 100vh;
   margin-block-end: 40px;
   padding: var(--page-padding);
   position: relative;
@@ -37,9 +38,9 @@
 }
 
 .header__theme-menu-button {
-  padding: 10px;
-  width: 70px;
-  height: 26px;
+  padding: 4px 10px;
+  min-inline-size: 70px;
+  min-block-size: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,8 +121,8 @@
   font-size: var(--font-size);
 }
 
-.header::before,
-.header::after {
+.decorated-zone::before,
+.decorated-zone::after {
   content: "";
   position: absolute;
   border: 1px solid var(--decor-color);
@@ -129,14 +130,14 @@
   height: 25px;
 }
 
-.header::before {
+.decorated-zone::before {
   top: var(--page-padding);
   right: var(--page-padding);
   border-bottom: none;
   border-left: none;
 }
 
-.header::after {
+.decorated-zone:after {
   bottom: var(--page-padding);
   left: var(--page-padding);
   border-top: none;
@@ -245,41 +246,23 @@
   justify-content: center;
   align-items: center;
   padding-inline: 10px;
-  color: var(--title-color);
-  font-size: var(--title-size);
-  line-height: 0.825;
-  text-shadow: 2px 2px var(--title-shadow-color);
   margin-block-start: 40px;
   position: relative;
   padding: 20px;
 }
 
-.footer::before,
-.footer::after {
-  content: "";
-  position: absolute;
-  border: 1px solid var(--decor-color);
-  width: 25px;
-  height: 25px;
-}
-
-.footer::before {
-  top: var(--page-padding);
-  right: var(--page-padding);
-  border-bottom: none;
-  border-left: none;
-}
-
-.footer::after {
-  bottom: var(--page-padding);
-  left: var(--page-padding);
-  border-top: none;
-  border-right: none;
+.footer__title {
+  font-weight: 700;
+  font-size: var(--title-size);
+  line-height: 0.825;
+  margin: 0;
+  color: var(--title-color);
+  text-shadow: 2px 2px var(--title-shadow-color);
 }
 
 @media (width >=768px) {
   .header {
-    min-height: 1024px;
+    min-block-size: 1024px;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 60px;
   }
@@ -353,7 +336,7 @@
 
 @media (width >=1024px) {
   .header {
-    min-height: 768px;
+    min-block-size: 768px;
   }
 
   .header__theme-menu {

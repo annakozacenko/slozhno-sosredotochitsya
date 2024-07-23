@@ -24,7 +24,7 @@
   }
 
   .page {
-    background-image: url(./../images/cover-image-light.png);
+    background-image: url(../images/cover-image-light.png);
   }
 
   .rec {
@@ -33,7 +33,7 @@
 }
 
 .page.theme_light {
-  background-image: url(./../images/cover-image-light.png);
+  background-image: url(../images/cover-image-light.png);
 }
 
 .page.theme_light .rec {
