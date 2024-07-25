@@ -9,7 +9,7 @@
   font-family: IBM Plex mono, monospace;
   font-size: var(--font-size);
   background-color: var(--background-color);
-  background-image: url(./../images/cover-image-dark.png);
+  background-image: url(../images/cover-image-dark.png);
   background-attachment: fixed;
 }
 
@@ -19,7 +19,7 @@
   align-items: center;
   justify-items: stretch;
   min-block-size: 668px;
-  height: 100vh;
+  block-size: 100vh;
   margin-block-end: 40px;
   padding: var(--page-padding);
   position: relative;
@@ -44,7 +44,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: IBM Plex Mono;
+  font-family: IBM Plex Mono, monospace;
   font-size: var(--font-size);
   font-weight: 400;
   line-height: 1;
@@ -241,7 +241,8 @@
 
 .footer {
   font-weight: 700;
-  height: 100vh;
+  min-block-size: 668px;
+  block-size: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -262,7 +263,6 @@
 
 @media (width >=768px) {
   .header {
-    min-block-size: 1024px;
     grid-template-columns: 1fr 1fr;
     margin-block-end: 60px;
   }
@@ -284,9 +284,7 @@
     margin-block-end: 80px;
   }
 
-  .section_what,
-  .section_how,
-  .section_why {
+  .section {
     grid-template-columns: 1fr 2fr;
   }
 
@@ -314,7 +312,7 @@
     gap: 20px;
   }
 
-  .picture {
+  .section-pictures__image {
     object-fit: cover;
     object-position: bottom;
     height: 100%;
@@ -335,10 +333,6 @@
 }
 
 @media (width >=1024px) {
-  .header {
-    min-block-size: 768px;
-  }
-
   .header__theme-menu {
     align-self: start;
     justify-self: center;
